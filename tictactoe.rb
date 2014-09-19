@@ -26,17 +26,17 @@ require 'pry'
 
 BOARD_CONTENTS = {1 => ' ', 2 => ' ', 3 => ' ', 4 => ' ', 5 => ' ', 6 => ' ', 7 => ' ', 8 => ' ', 9 => ' '}
 
-def computer_chose(num)
-  puts "= = = = = = = = = = = ="
-  puts "Computer chose #{num}."
-  puts "= = = = = = = = = = = ="
-end
+# def computer_chose(num)
+#   puts "= = = = = = = = = = = ="
+#   puts "Computer chose #{num}."
+#   puts "= = = = = = = = = = = ="
+# end
 
-def player_chose(num)
-  puts "= = = = = = = = = = = ="
-  puts "Player chose #{num}."
-  puts "= = = = = = = = = = = ="
-end
+# def player_chose(num)
+#   puts "= = = = = = = = = = = ="
+#   puts "Player chose #{num}."
+#   puts "= = = = = = = = = = = ="
+# end
 
 def square_chosen(words)
   puts "= = = = = = = = = = = = = = = = = = ="
@@ -45,6 +45,7 @@ def square_chosen(words)
 end
 
 def draw_board(var)
+  system 'clear'
   puts "     |     |     "
   puts "  #{BOARD_CONTENTS[1]}  |  #{BOARD_CONTENTS[2]}  |  #{BOARD_CONTENTS[3]}  "
   puts "     |     |     "
@@ -70,7 +71,7 @@ def player_choice(player_input)
       next
     elsif player_input == "1" && (BOARD_CONTENTS[1] != "X" && BOARD_CONTENTS[1] != "O")  
       BOARD_CONTENTS[1] = "X"
-      player_chose(1)
+      # player_chose(1)
       break
     end
     # (2)
@@ -79,7 +80,7 @@ def player_choice(player_input)
       next
     elsif player_input == "2" && (BOARD_CONTENTS[2] != "X" && BOARD_CONTENTS[2] != "O")  
       BOARD_CONTENTS[2] = "X"
-      player_chose(2)
+      # player_chose(2)
       break
     end
     # (3)
@@ -88,7 +89,7 @@ def player_choice(player_input)
       next
     elsif player_input == "3" && (BOARD_CONTENTS[3] != "X" && BOARD_CONTENTS[3] != "O")  
       BOARD_CONTENTS[3] = "X"
-      player_chose(3)
+      # player_chose(3)
       break
     end
     # (4)
@@ -97,7 +98,7 @@ def player_choice(player_input)
       next
     elsif player_input == "4" && (BOARD_CONTENTS[4] != "X" && BOARD_CONTENTS[4] != "O")  
       BOARD_CONTENTS[4] = "X"
-      player_chose(4)
+      # player_chose(4)
       break
     end
     # (5)
@@ -106,7 +107,7 @@ def player_choice(player_input)
       next
     elsif player_input == "5" && (BOARD_CONTENTS[5] != "X" && BOARD_CONTENTS[5] != "O")  
       BOARD_CONTENTS[5] = "X"
-      player_chose(5)
+      # player_chose(5)
       break
     end
     # (6)
@@ -115,7 +116,7 @@ def player_choice(player_input)
       next
     elsif player_input == "6" && (BOARD_CONTENTS[6] != "X" && BOARD_CONTENTS[6] != "O")  
       BOARD_CONTENTS[6] = "X"
-      player_chose(6)
+      # player_chose(6)
       break
     end
     # (7)
@@ -124,7 +125,7 @@ def player_choice(player_input)
       next
     elsif player_input == "7" && (BOARD_CONTENTS[7] != "X" && BOARD_CONTENTS[7] != "O")  
       BOARD_CONTENTS[7] = "X"
-      player_chose(7)
+      # player_chose(7)
       break
     end
     # (8)
@@ -133,7 +134,7 @@ def player_choice(player_input)
       next
     elsif player_input == "8" && (BOARD_CONTENTS[8] != "X" && BOARD_CONTENTS[8] != "O")  
       BOARD_CONTENTS[8] = "X"
-      player_chose(8)
+      # player_chose(8)
       break
     end
     # (9)
@@ -142,7 +143,7 @@ def player_choice(player_input)
       next
     elsif player_input == "9" && (BOARD_CONTENTS[9] != "X" && BOARD_CONTENTS[9] != "O")  
       BOARD_CONTENTS[9] = "X"
-      player_chose(9)
+      # player_chose(9)
       break
     end
   end
@@ -158,7 +159,7 @@ def computer_choice(computer_input)
       next
     elsif computer_input == "1" && (BOARD_CONTENTS[1] != "X" && BOARD_CONTENTS[1] != "O")  
       BOARD_CONTENTS[1] = "O"
-      computer_chose(1)
+      # computer_chose(1)
       break
     end
     # (2)
@@ -166,7 +167,7 @@ def computer_choice(computer_input)
       next
     elsif computer_input == "2" && (BOARD_CONTENTS[2] != "X" && BOARD_CONTENTS[2] != "O")  
       BOARD_CONTENTS[2] = "O"
-      computer_chose(2)
+      # computer_chose(2)
       break
     end
     # (3)
@@ -174,7 +175,7 @@ def computer_choice(computer_input)
       next
     elsif computer_input == "3" && (BOARD_CONTENTS[3] != "X" && BOARD_CONTENTS[3] != "O")  
       BOARD_CONTENTS[3] = "O"
-      computer_chose(3)
+      # computer_chose(3)
       break
     end
     # (4)
@@ -182,7 +183,7 @@ def computer_choice(computer_input)
       next
     elsif computer_input == "4" && (BOARD_CONTENTS[4] != "X" && BOARD_CONTENTS[4] != "O")  
       BOARD_CONTENTS[4] = "O"
-      computer_chose(4)
+      # computer_chose(4)
       break
     end
     # (5)
@@ -190,7 +191,7 @@ def computer_choice(computer_input)
       next
     elsif computer_input == "5" && (BOARD_CONTENTS[5] != "X" && BOARD_CONTENTS[5] != "O")  
       BOARD_CONTENTS[5] = "O"
-      computer_chose(5)
+      # computer_chose(5)
       break
     end
     # (6)
@@ -198,7 +199,7 @@ def computer_choice(computer_input)
       next
     elsif computer_input == "6" && (BOARD_CONTENTS[6] != "X" && BOARD_CONTENTS[6] != "O")  
       BOARD_CONTENTS[6] = "O"
-      computer_chose(6)
+      # computer_chose(6)
       break
     end
     # (7)
@@ -206,7 +207,7 @@ def computer_choice(computer_input)
       next
     elsif computer_input == "7" && BOARD_CONTENTS[7] != "X" && BOARD_CONTENTS[7] != "O"  
       BOARD_CONTENTS[7] = "O"
-      computer_chose(7)
+      # computer_chose(7)
       break
     end
     # (8)
@@ -214,7 +215,7 @@ def computer_choice(computer_input)
       next
     elsif computer_input == "8" && (BOARD_CONTENTS[8] != "X" && BOARD_CONTENTS[8] != "O")  
       BOARD_CONTENTS[8] = "O"
-      computer_chose(8)
+      # computer_chose(8)
       break
     end
     # (9)
@@ -222,7 +223,7 @@ def computer_choice(computer_input)
       next
     elsif computer_input == "9" && (BOARD_CONTENTS[9] != "X" && BOARD_CONTENTS[9] != "O")  
       BOARD_CONTENTS[9] = "O"
-      computer_chose(9)
+      # computer_chose(9)
       break
     end
   end
@@ -313,6 +314,7 @@ loop do
     puts "= = = = = = = = = = = = ="
     puts "Goodbye!"
     puts "= = = = = = = = = = = = ="
+    break
   elsif (BOARD_CONTENTS[1] == "X" || BOARD_CONTENTS[1] == "O") &&
     (BOARD_CONTENTS[2] == "X" || BOARD_CONTENTS[2] == "O") &&
     (BOARD_CONTENTS[3] == "X" || BOARD_CONTENTS[3] == "O") &&
